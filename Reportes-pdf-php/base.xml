@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+    <item>
+        <name>Nombre Apellido</name>
+        <ced>12345678</ced>
+        <email>nombreapellido@correo.com</email>
+        <calidad>Participante</calidad>
+    </item>
+    <item>
+        <name>Nombre Apellido</name>
+        <ced>98765432</ced>
+        <email>concursante@correo.com</email>
+        <calidad>Colaborador</calidad>
+    </item>
+</lista>

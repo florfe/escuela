@@ -1,0 +1,35 @@
+.button{ 
+position: absolute;
+border: 2px solid #ffffff; /*anchura, estilo y color borde*/
+padding: 5px; /*espacio alrededor texto*/
+background-color: #0950A6; /*color botón*/
+font-size: 14px;
+width: 10%;
+  cursor: point;
+  color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Times New Roman', sans-serif; /*tipografía texto*/
+border-radius: 30px; /*bordes redondos*/
+text-align: center;
+top: 5%;
+left: 5%;
+
+}
+ .ayuda{
+  position: absolute;
+border: 2px solid black; /*anchura, estilo y color borde*/
+padding: 5px; /*espacio alrededor texto*/
+background-color: #C2152D; /*color botón*/
+font-size: 14px;
+width: 10%;
+  cursor: point;
+  color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Times New Roman', sans-serif; /*tipografía texto*/
+border-radius: 30px; /*bordes redondos*/
+text-align: center;
+   top: 55%;
+  left: 45%;
+ }

@@ -1,0 +1,99 @@
+table{
+      border-collapse: collapse;
+      border-color: black;
+      color: black;
+      background: white;
+      font-size: 12px;
+   }
+
+   table th{
+      width: 80px;
+
+        }
+
+   table td{
+      font-size: 10px;
+      padding: 1px;
+        }
+
+ tr:nth-of-type(1)>th{
+      background-color: #F1F627;
+   }
+
+tr:nth-of-type(2)>th,
+tr:nth-of-type(3) >th,
+tr:nth-of-type(4) >th,
+tr:nth-of-type(5) >th,
+tr:nth-of-type(6) >th,
+tr:nth-of-type(7) >th,
+tr:nth-of-type(8) >th,
+tr:nth-of-type(9) >th,
+tr:nth-of-type(10) >th,
+tr:nth-of-type(11) >th,
+tr:nth-of-type(12) >th,
+tr:nth-of-type(13) >th,
+tr:nth-of-type(14) >th,
+tr:nth-of-type(15) >th,
+tr:nth-of-type(16) >th,
+tr:nth-of-type(17) >th{
+      background-color: #27F6F6;
+   }
+
+td[colspan]{
+   background-color: #27F6F6;
+}
+   @media(min-width:380px){
+
+   
+}
+
+@media(min-width:480px){
+   
+
+
+}
+
+@media(min-width:768px){
+  
+ 
+}
+
+@media(min-width:1024px){
+  
+ 
+ 
+ 
+}
+
+@media(min-width:1280px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

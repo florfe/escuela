@@ -1,0 +1,9 @@
+main.jss:
+
+ function leerMas(){
+ 	var button = document.getElementById('button');
+	var source = historia.html;
+	window.open(source);
+ }
+
+

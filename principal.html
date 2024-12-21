@@ -1,0 +1,85 @@
+<?php
+  session_start();
+
+if(empty($_SESSION['Usuario_Nombre'])){
+   header('location: cerrarsesion.php');
+      exit;
+}
+ 
+ require_once 'header.inc.php'; ?>
+
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+
+            <?php require_once 'menu.inc.php'; ?>
+         
+            <?php require_once 'user.inc.php'; ?>
+
+    </header>
+    <!-- Sidebar menu-->
+   <?php require_once 'slider.inc.php'; ?>
+    <!-- fin Sidebar menu-->
+
+    <main class="app-content">
+      <div class="app-title">
+        <div>
+          <h1><i class="fa fa-dashboard"></i> Bienvenidos</h1>
+          <p>Este es nuestro panel de administración. Por favor selecciona alguna opción del menú lateral izquierdo</p>
+        </div>
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+          <li class="breadcrumb-item"><a href="principal.php">Inicio</a></li>
+        </ul>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="widget-small primary coloured-icon"><img class="icon fa fa-users fa-3x" src= "icon/alumnos3-removebg-preview.png"/>
+            <div class="info">
+              <h4>Usuarios</h4>
+              <p><b>50</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+           
+          <div class="widget-small primary coloured-icon"><img class="icon fa fa-users fa-3x" src= "icon/batuta-removebg-preview.png"/>
+            <div class="info">
+              <h4>Usuarios</h4>
+              <p><b>50</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="widget-small primary coloured-icon"><img class="icon fa fa-users fa-3x" src= "icon/base3-removebg-preview.png"/>
+            <div class="info">
+              <h4>Usuarios</h4>
+              <p><b>50</b></p>
+            </div>
+        </div>
+        
+      </div>
+        <div class="col-md-3">
+          <div class="widget-small primary coloured-icon"><img class="icon fa fa-users fa-3x" src= "icon/base3-removebg-preview.png"/>
+            <div class="info">
+              <h4>Usuarios</h4>
+              <p><b>50</b></p>
+            </div>
+        </div>
+        
+      </div>
+     
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    
+  </body>
+</html>

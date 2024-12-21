@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>LOGIN</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+        <section class="material-half-bg">
+      <div class="cover"></div>
+    </section>
+    <section class="login-content">
+      <div class="logo">
+        <h1>Sistema de Gestión Escolar</h1>
+      </div>
+      <div class="login-box "  >
+		 <form class="login-form" method="post">
+<img src="img/logo.png" alt="" class="img_Ipem"/>
+          <h3 >INGRESA AL SISTEMA</h3>
+
+
+       
+         <div class="bs-component">
+            <?php if (!empty ($Mensaje)) { ?>
+                                <div class="alert alert-danger alert-dismissable">
+                                    <?php echo $Mensaje; ?>
+                                </div>
+                            <?php } ?>
+          </div>
+         
+         
+          <div class="ingreso">
+            <div class="alert alert-dismissible alert-info">
+              <strong>Ingresa tus datos</strong>
+            </div>
+          </div>
+			<input class="form" placeholder="&#128272; Email" name="email" type="email" autofocustype="text" >
+			<input class="form" placeholder="&#128272;  Password" name="password" type="password" >
+			 <div class="form-group">
+            <div class="utility">
+              <input type="submit" value="Olvidaste la clave ?"><a href="#" data-toggle="flip"></a>
+            
+         			<input type="submit" class="btn btn-primary btn-block" name="BotonLogin" value="Ingresar"><i class="fa fa-sign-in fa-lg fa-fw"></i>
+							<input  type="submit" value="Volver"><a href="javascript: history.go(-1)" data-toggle="flip"></a>
+</div>
+          </div>
+	</body>
+	
+
+
+
+							
+						
+</html>

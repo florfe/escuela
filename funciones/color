@@ -1,0 +1,28 @@
+<?  php
+function colorChange(e){
+  let div = e.parentNode;
+  switch(e.value){
+  case '6':
+      div.style.backgroundColor = "red";
+      break;
+  case '5':
+      div.style.backgroundColor = "red";
+      break;
+  case '4':
+      div.style.backgroundColor = "red";
+      break;
+    case '3':
+      div.style.backgroundColor = "red";
+      break;
+    case '2':
+      div.style.backgroundColor = "red";
+      break;
+    case '1':
+      div.style.backgroundColor = "red";
+      break;
+    default:
+      div.style.backgroundColor = "";
+      break;
+  }
+}
+?>

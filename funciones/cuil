@@ -1,0 +1,36 @@
+<?php 
+function calcularCUIL($dni, $sexo) {
+  // Reemplazar por tu fecha de nacimiento
+  $fechaNacimiento = $_POST['fechaNacimiento'];
+  
+  // Calcular verificador
+  $verificador = 0;
+  $dni = str_pad($dni, 8, '0', STR_PAD_LEFT);
+  
+  $multiplicadores = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2];
+  for ($i = 0; $i < 10; $i++) {
+    $verificador += $dni[$i] * $multiplicadores[$i];
+  }
+  $verificador = 11 - ($verificador % 11);
+  
+  // Ajustar verificador para casos especiales
+  if ($verificador == 11) {
+    $verificador = 0;
+  } elseif ($verificador == 10) {
+    $verificador = ($sexo == 'M') ? 9 : 4;
+  }
+  
+  // Construir CUIL
+  $sexo = ($sexo == 'M') ? 20 : 27;
+  $cuil = $sexo . $dni . $verificador;
+  
+  return $cuil;
+}
+
+// Ejemplo de uso
+$dni = 12345678;
+$sexo = 'M';
+
+$cuil = calcularCUIL($dni, $sexo);
+echo "El número de CUIL es: $cuil";
+?>
